@@ -1,0 +1,89 @@
+#head-nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin-left: 0;
+    margin-right: 0;
+
+    button {
+        background-color: #212F3D;
+        color: #ffffff;
+        border-radius: 10px;
+        padding: 0.75em;
+        transition: ease-out all 0.5s;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    }
+
+    #logInBtn {
+        border: none;
+        padding: 1em;
+
+    }
+
+    a {
+        font-size: large;
+
+        @media only screen and (max-width: 1000px) {
+            font-size: small;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        max-width: 100vw;
+
+
+    }
+}
+
+
+#Hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to left, rgb(255, 255, 255, 0), rgb(255, 255, 255, 0.25), rgb(255, 255, 255, 0.5), rgb(255, 255, 255, 0.75), rgb(255, 255, 255, 1)), url("./Hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 55rem;
+    text-align: left;
+
+    @media only screen and (max-width: 1000px) {
+        max-width: 100vw;
+        ;
+    }
+
+    p {
+        padding: 1em;
+        font-weight: 700;
+        width: 35%;
+    }
+
+    h1 {
+        font-family: 'Coda Caption', sans-serif;
+        font-weight: 750;
+        font-size: 45px;
+    }
+
+    button {
+        padding: 1em;
+        position: relative;
+        left: 1.5%;
+        border-radius: 16px;
+        background-color: #212F3D;
+        color: #ffffff;
+        border-radius: 10px;
+        transition: ease-out all 0.5s;
+
+        &:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    }
+}
